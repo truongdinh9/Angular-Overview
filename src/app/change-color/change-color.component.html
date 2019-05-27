@@ -1,0 +1,14 @@
+<hr/>
+<h1>Change color App </h1>
+<select style="width: 60px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bAAtmZ_W-KErPLFRVM8BguaaNnkZ8b1FWCclDonotFg8mXZP)" [value]="colorfeild" (change)="color($event.target.value)">
+  <option  value="red" [style.background-color]="'red'"></option>
+  <option  value="blue" [style.background-color]="'blue'"></option>
+  <option  value="green" [style.background-color]="'green'"></option>
+</select>
+<div style="margin-left: 100px; width: 300px; height: 100px" [style.background-color]="colorfeild">
+
+</div>
+<!--<span style="height:100px; width:100px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bAAtmZ_W-KErPLFRVM8BguaaNnkZ8b1FWCclDonotFg8mXZP)"> 1 </span>-->
+<div style="width: 100px; height: 100px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9bAAtmZ_W-KErPLFRVM8BguaaNnkZ8b1FWCclDonotFg8mXZP)">
+
+</div>

@@ -1,0 +1,12 @@
+<hr/>
+<h1> Calculator App </h1>
+<input type="number" placeholder="So thu nhat " #element1 [value]="first">
+<select (change)="calutate(element1.value, element2.value, $event.target.value)" [value]="dau" #dauID>
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">x</option>
+  <option value="/">/</option>
+</select>
+<input type="number" placeholder="Nhap so thu 2" #element2 [value]="second">
+<button (click)="calutate(element1.value, element2.value, dauID.value)">Tinh</button>
+<p>{{kq}}</p>

@@ -1,0 +1,22 @@
+<h1>Pet information App</h1>
+<div>
+  <fieldset>
+    <legend>Change pet infor</legend>
+    <br>
+    Pet name:
+    <input type="text" [value]="petName" #name>
+    <br>
+    Pet img link:
+    <input type="text" [value]="petImg" #img>
+    <button (click)="updatepet(name.value,img.value)">Update</button>
+  </fieldset>
+
+</div>
+<div  >
+  <p>{{petName}}</p>
+  <img [src]="petImg" width="30%">
+</div>
+
+
+
+
